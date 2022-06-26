@@ -1,0 +1,43 @@
+p {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* p.fromRight:after {
+  transform-origin: 100% 50%;
+}
+h1.fromLeft:after {
+  transform-origin: 0% 50%;
+} */
+
+.header {
+  display: flex;
+  color: var(--header);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav {
+  color: var(--header);
+}
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.link {
+  color: var(--btnText);
+  text-decoration: none;
+}
+.link:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px var(--btnBg);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.link:hover:after {
+  transform: scaleX(1);
+}
